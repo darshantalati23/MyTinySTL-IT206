@@ -21,7 +21,7 @@
 
 ---
 
-## Breadth-Wise Understanding (30%)
+## Breadth-Wise Understanding
 
 ### Project Structure
 - **Headers**: Core functionality in root (e.g., `vector.h`, `map.h`, `algo.h`).
@@ -49,7 +49,7 @@
 
 ---
 
-## Depth-Wise Analysis (30%)
+## Depth-Wise Analysis
 
 ### Approaches Taken
 - **Modularity**: Each header (e.g., `vector.h`) is self-contained, allowing selective inclusion without dependencies on unused components.
