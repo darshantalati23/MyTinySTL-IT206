@@ -1,5 +1,7 @@
 # MyTinySTL Project Presentation
 
+---
+
 ## Basics of MyTinySTL
 
 ### What is MyTinySTL?
@@ -51,6 +53,8 @@
 
 ## Depth-Wise Analysis
 
+---
+
 ### Approaches Taken
 - **Modularity**: Each header (e.g., `vector.h`) is self-contained, allowing selective inclusion without dependencies on unused components.
 - **C++11 Features**: 
@@ -62,7 +66,11 @@
   - Strong guarantee (rollback on failure) for key ops like `vector::push_back`.
 - **Testing**: `Test/` directory runs comprehensive checks (e.g., `deque_test.h`), with performance tests for ops like `unordered_map` insertion.
 
+---
+
 ### Data Structures and Trade-Offs
+
+---
 
 #### Dynamic Arrays
 - **Headers**: `vector.h`, `deque.h`
@@ -86,6 +94,8 @@
   - `vector` resizing: If capacity exceeds, it allocates a new, larger array, moves elements (C++11 move semantics), and deallocates the old one.
   - `deque` block management: Maintains a map of block pointers, resizing the map if ends overflow.
 
+---
+
 #### Linked Lists
 - **Header**: `list.h`
 - **Internal Structure**: Doubly-linked list.
@@ -98,6 +108,8 @@
 - **Details**:
   - Iterators remain valid post-insertion unless the node is deleted.
   - Splicing is efficient (pointer reassignment), unlike `vector`’s copying.
+
+---
 
 #### Trees
 - **Headers**: `map.h`, `set.h`, `rb_tree.h`
@@ -114,6 +126,8 @@
   - Balancing: After insertion, rotations and color flips maintain properties (e.g., no two reds in a row, equal black height).
   - Example: Inserting into `map` triggers a tree walk, then rebalance if needed.
 
+---
+
 #### Hash Tables
 - **Headers**: `unordered_map.h`, `unordered_set.h`, `hashtable.h`
 - **Internal Structure**: Hash table (via `hashtable.h`).
@@ -129,6 +143,8 @@
   - Hashing: `hashtable.h` likely defines a default hash, with buckets resized on load factor exceedance.
   - Performance tested in `unordered_map_test.h` (e.g., 100k insertions).
 
+---
+
 #### Strings
 - **Headers**: `basic_string.h`, `astring.h`
 - **Internal Structure**: Dynamic array of characters.
@@ -141,6 +157,8 @@
 - **Details**:
   - Resizing mirrors `vector`, doubling capacity as needed.
   - Likely lacks advanced optimizations (e.g., SSO stores short strings in the object itself).
+
+---
 
 ### Utilities
 - **Headers**: `allocator.h`, `memory.h`, `iterator.h`, `functional.h`
