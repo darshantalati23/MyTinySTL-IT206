@@ -2,6 +2,16 @@
 
 ---
 
+## Analysis By _The Debuggers_
+
+### Team Members
+#### - Aarohi Mehta *(202401002)*
+#### - Alvita Thakor *(202401012)*
+#### - Darshan Talati *(202401046)*
+#### - Dharmesh Upadhyay *(202401049)*
+
+---
+
 ## Basics of MyTinySTL
 
 ### What is MyTinySTL?
@@ -171,18 +181,5 @@
 
 ---
 
-<!-- ## Contribution
-- **Bug Identified**: `deque.push_front` doesn’t handle allocation failure gracefully (Issue #X).
-  - Crashes if block allocation fails, violating exception safety.
-- **Fix**: Added try-catch in `deque.h`, test in `deque_test.h` (PR #Y).
-  ```cpp
-  void push_front(const T& value) {
-      if (/* buffer full */) {
-          try {
-              resize_buffer(); // Allocate new block
-          } catch (const std::bad_alloc& e) {
-              throw; // Preserve state
-          }
-      }
-      // Insert logic
-  } -->
+## *Debuggers*
+#### Aarohi Mehta
