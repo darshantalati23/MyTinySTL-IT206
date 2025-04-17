@@ -197,3 +197,13 @@
 
 5. **What challenges did the team face with MyTinySTL?**  
    - **Answer**: Debugging `alloc.h` bugs (e.g., crashes in `vector::reserve`), simplifying STL features and understanding all codes with templates.
+
+6. **What is CMake in Short**
+  - **Answer** CMake is a tool that automates building software, like a recipe for compiling MyTinySTL on Linux/macOS. The `CMakeLists.txt` file tells CMake how to compile headers (`vector.h`, `map.h`) and tests (`vector_test.h`).
+    - *How It Works*: Run `cmake ..` to generate Makefiles, then `make` to build, and `ctest` to run tests. It sets C++11, includes files, and links executables.
+    - *Example*
+      ```bash
+      mkdir build && cd build
+      cmake ..
+      make
+      ctest```
