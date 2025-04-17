@@ -180,6 +180,3 @@
 - **Trade-Offs**: Simplicity (no custom allocators) vs. flexibility loss.
 
 ---
-
-## *Debuggers*
-#### Aarohi Mehta
