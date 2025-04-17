@@ -10,7 +10,7 @@
 ### Purpose and Goals
 - **Educational**: Designed as a learning tool to understand STL internals, making it ideal for students and developers.
 - **Lightweight**: Aims for a smaller footprint than the standard STL, sacrificing some features for simplicity.
-- **Community-Driven**: With 11.9k stars and 3.3k forks, it’s widely recognized, though now in maintenance mode (bug fixes only since v2.0.0).
+- **Community-Driven**: With ~12k stars and 3k+ forks, it’s widely recognized, though now in maintenance mode (bug fixes only since v2.0.0).
 
 ### Technical Foundations
 - **C++11**: Leverages modern features like move semantics (`std::move`), perfect forwarding (`std::forward`), and `noexcept` for efficiency and safety.
