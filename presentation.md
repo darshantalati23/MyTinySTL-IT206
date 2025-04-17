@@ -180,3 +180,20 @@
 - **Trade-Offs**: Simplicity (no custom allocators) vs. flexibility loss.
 
 ---
+
+## Frequently Asked Questions (FAQs) About MyTinySTL
+
+1. **Why does MyTinySTL use C++11 instead of C++17 or C++20?**  
+   - **Answer**: C++11 offers move semantics and `noexcept` for efficiency (e.g., `vector::push_back`), with broad compiler support, keeping it simple and accessible for students.
+
+2. **How does MyTinySTL ensure container correctness?**  
+   - **Answer**: The `Test/` directory (e.g., `vector_test.h`) runs assertions to verify operations like `map::insert`, catching `alloc.h` bugs and ensuring O(1) `unordered_map::find`.
+
+3. **What’s different between MyTinySTL and C++ STL?**  
+   - **Answer**: MyTinySTL omits features like `vector<bool>`, custom allocators, and `std::sort` for simplicity, using a fixed `mystl::allocator<T>` and basic `algo.h`.
+
+4. **How does MyTinySTL support cross-platform development?**  
+   - **Answer**: `CMakeLists.txt` builds for Linux/macOS with `cmake .. && make`, while `MSVC/MyTinySTL_VS2015.sln` supports Windows, enabling tests for `deque.h`, `set.h`.
+
+5. **What challenges did the team face with MyTinySTL?**  
+   - **Answer**: Debugging `alloc.h` bugs (e.g., crashes in `vector::reserve`), simplifying STL features and understanding all codes with templates.
