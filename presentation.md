@@ -2,7 +2,7 @@
 
 ---
 
-## Analysis By _The Debuggers_
+## Analysis By _Debuggers_
 
 ### Team Members
 #### - Aarohi Mehta *(202401002)*

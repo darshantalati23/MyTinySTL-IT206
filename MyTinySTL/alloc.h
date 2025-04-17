@@ -13,7 +13,7 @@
 // 感兴趣的朋友去修改啦！
 
 #include <new>
-#include <bits/stdc++.h>
+
 #include <cstddef>
 #include <cstdio>
 
